@@ -2,7 +2,7 @@ import { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 import Stripe from "stripe";
 
-export async function getProducts(request:NextRequest){
+export async function GET(request:NextRequest){
     const req=await request.nextUrl.searchParams;
     const id=req.get('id');//get item id from frontend
 
