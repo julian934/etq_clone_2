@@ -51,7 +51,7 @@ const Menswear = (props: Props) => {
                <motion.div className='flex w-6 h-6  bg-black' >
 
                </motion.div>
-               <p className=' ' > At our Dutch design studio, we focus on the things even the eye can't see, to build better. We create apparel 
+               <p className=' ' > At our Dutch design studio, we focus on the things even the eye can&apos;t see, to build better. We create apparel 
                 but approach it as product design. It makes all the difference.   </p>
                 <Link className=' w-36 h-14 border-2 border-slate-300  self-start text-center  py-4 ' href='/' >
                    Shop Menswear
