@@ -1,1 +1,0 @@
-//Just access the /api/signin route on the front-end to get a session object passed back.
