@@ -102,7 +102,7 @@ if(data!=undefined) console.log(data.data)
                <h1 className='flex self-center' >Parent category</h1>
           </div>
             <div className='flex flex-wrap self-end  gap-2 justify-around ' >
-               {data?.data?.images.length>1 && data?.data?.images?.map((items:any)=><Image className='flex w-1/3 ' width={100} height={100} quality={100} src={items} alt="Item Images" />)}
+               {data?.data?.images.length>1 && data?.data?.images?.map((items:any)=><Image className='flex w-1/3 ' width={100} height={100} quality={100} key={items.id} src={items} alt="Item Images" />)}
                {data?.data?.images?.length==1 && <Image className='flex w-2/3 ' width={300} height={300} quality={100} src={data?.data?.images[0]} alt="Item Images" />}
             </div>
         </div>
