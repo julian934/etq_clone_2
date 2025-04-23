@@ -2,7 +2,7 @@ import { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 import Stripe from "stripe"
 
-export async function getSneakers(request:NextRequest){
+export async function GET(request:NextRequest){
     const stripe=await new Stripe(`${process.env.NEXT_PUBLIC_STRIPE_SECRET}`)
     try {
         //const req=await request.json()
@@ -29,4 +29,3 @@ export async function getSneakers(request:NextRequest){
 
 }
 
-export {getSneakers as GET}
