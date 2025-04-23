@@ -11,7 +11,7 @@ type Props = {
   id:string | undefined | null | any
 }
 
-const ItemView = ({id}:{id:string | undefined | null | any}) => {
+const ItemView = ({id}:Props) => {
   const [priceData,setPriceData]=useState<any>()
     const {data}=useQuery({
         queryKey:['Current Item'],
