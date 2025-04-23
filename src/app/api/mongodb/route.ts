@@ -2,7 +2,7 @@ import axios from 'axios'
 import { MongoClient } from 'mongodb'
 import { NextResponse, type NextRequest } from 'next/server'
 
-export async function getData(request:NextRequest){
+export async function GET(request:NextRequest){
     const body =await request?.body;
     const formData=new FormData()
     const username=formData.get('username');
@@ -22,4 +22,4 @@ export async function getData(request:NextRequest){
     return NextResponse.json({data:coll})
 }
 
-export {getData as GET,getData as POST}
+//export {getData as GET,getData as POST}
