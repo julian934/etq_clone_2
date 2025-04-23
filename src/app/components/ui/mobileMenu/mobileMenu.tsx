@@ -81,7 +81,7 @@ const MobileMenu = (props: Props) => {
                               </div>
                               <div className=' flex flex-wrap w-full space-x-2' >
                                 {searchInfo && <h1 className='flex text-2xl px-2 ' >Products: </h1>}
-                                {searchInfo && searchInfo?.map((vals:any)=><div className='flex w-full  overflow-hidden space-x-6 space-y-2 ' >
+                                {searchInfo && searchInfo?.map((vals:any)=><div className='flex w-full  overflow-hidden space-x-6 space-y-2 ' key={vals.id} >
                                   <Link className='flex w-full justify-between space-x-2' href={`/collections/${vals.id}`} >
                                  
                                     <h1 className='flex justify-start self-center ' > {vals?.name} </h1>

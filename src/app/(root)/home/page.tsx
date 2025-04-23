@@ -127,7 +127,7 @@ if(products){
                <Image className='' src='/' quality={100} width={100} height={100} alt='Trousers' />
                <div className='' >
                   <h1 className='' >Trousers</h1>
-                  <p className='' >A powerful silhouette and yet, they wear like pajama's.</p>
+                  <p className='' >A powerful silhouette and yet, they wear like pajama&apos;s.</p>
                </div>
              </div>
              <div className='flex flex-col w-60 h-60' >
@@ -175,7 +175,7 @@ if(products){
               <div className='flex flex-col self-center w-1/3 space-y-4 ' >
                 <Image className='w-20 h-20' src='/' quality={100} width={100} height={100} alt="Site Symbol" />
                 <p className='flex ' >Our style never changes. It evolves. Continuously. Confident and comfortable, ETQ introduces the etiquette 
-                  of artisan shoe crafting to today's sneaker world. 
+                  of artisan shoe crafting to today&apos;s sneaker world. 
                 </p>
                 <Link className='text-md text-center flex w-40 border-2 border-slate-100 h-10 text-center ' href="/" >
                   <div className='flex self-center justify-self-center px-4 ' >
@@ -206,7 +206,7 @@ if(products){
             </div>
             <div className=' flex flex flex-col self-center w-1/3 space-y-4' >
                 <Image className='w-20 h-20' src='/' quality={100} width={100} height={100} alt='Site Symbol' />
-                <p className='flex' >At our Dutch design studio, we focus on the things even the eye can't see, to build better. We create apparel
+                <p className='flex' >At our Dutch design studio, we focus on the things even the eye can&apos;t see, to build better. We create apparel
                   but approach it as product design. It makes all the difference. 
                 </p>
                 <Link className='text-md text-center flex w-40 border-2 border-slate-100 h-10 text-center ' href="/" >

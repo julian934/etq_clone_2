@@ -47,7 +47,7 @@ const Test = (props: Props) => {
         <input className='' ref={userRef} onChange={handleUser} />
         <input className=''  ref={passRef} onChange={handlePass} />
         <button className='' onClick={()=>signIn('credentials',{name:userName,password:userPass,callbackUrl:'/'})} >Sign in</button>
-        <Link className='' href='/signup' >Don't have an account?</Link>
+        <Link className='' href='/signup' >Don&apos;t have an account?</Link>
     </div>
   )
 }
