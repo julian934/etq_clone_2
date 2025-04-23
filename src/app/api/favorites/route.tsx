@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-export async function getFavorites(){
+export async function GET(){
     
         const stripe =new Stripe(`${process.env.STRIPE_SECRET_KEY}`)
         if(stripe){
@@ -17,5 +17,3 @@ export async function getFavorites(){
   
     return NextResponse.json({message:'Endpoint successfully connected.'})
 }
-
-export {getFavorites as GET}

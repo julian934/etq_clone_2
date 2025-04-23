@@ -3,7 +3,7 @@ import { NextApiRequest } from "next";
 import { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-export async function PriceData(request:NextRequest){
+export async function GET(request:NextRequest){
     
     const stripe:any=await new Stripe(`${process.env.STRIPE_SECRET_KEY}`);
     const searchParams=await request.nextUrl.searchParams;
@@ -29,4 +29,3 @@ export async function PriceData(request:NextRequest){
    
 }
 
-export {PriceData as GET}
