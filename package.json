@@ -11,7 +11,7 @@
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.45.0",
-    "@stripe/react-stripe-js": "^2.7.1",
+    "@stripe/react-stripe-js": "^2.9.0",
     "@stripe/stripe-js": "^3.5.0",
     "@tanstack/react-query": "^5.40.0",
     "@tanstack/react-query-devtools": "^5.40.0",
@@ -19,15 +19,17 @@
     "add": "^2.0.6",
     "axios": "^1.7.2",
     "express": "^4.19.2",
-    "mongodb": "^6.8.0",
+    "mongodb": "^6.15.0",
+    "motion": "^12.5.0",
     "navigation-menu": "^1.0.0",
     "next": "14.2.1",
+    "next-auth": "^4.24.11",
     "next-sanity": "^9.3.10",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.45.0",
     "shadcn-ui": "^0.8.0",
-    "stripe": "^15.10.0",
+    "stripe": "^15.12.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

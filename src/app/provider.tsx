@@ -11,6 +11,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getPaymentIntent } from './lib/actions/getData';
 import { SessionProvider } from 'next-auth/react';
 import { Session } from 'next-auth';
+import { getSession } from 'next-auth/react';
 const Provider=({children}:any)=>{
     const [client]=useState(new QueryClient());
     const [clientSecret,setClientSecret]=useState(''); 
@@ -45,7 +46,7 @@ const Provider=({children}:any)=>{
                     {/*clientSecret && (
                       
                     )*/}
-                    <SessionProvider  >
+                    <SessionProvider   >
                        {children}
                        </SessionProvider>
                 </ReactQueryStreamedHydration>

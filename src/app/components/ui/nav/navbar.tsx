@@ -14,8 +14,10 @@ const NavBar = (props: Props) => {
     //Sticky Nav even on mobile.
     //replace with shadcn ui components
     //figure out how to take elements completely out of the order of rendered elements based on mobile or desktop
+    //connect navbar to UI
+    //Route the navigation to whether or not the hover state is true over the selected item, and render a default state if not. 
     if(!toggled){
-      return(<nav className='flex z-50 justify-between border-2 border-white max-sm:invisible max-sm:w-full flex-row md:w-full max-sm:space-around bg-black h-16 max-sm:items-center space-x-14 ' >
+      return(<nav className='flex z-50 justify-between border-2 border-white max-sm:invisible max-sm:w-full flex-row md:w-full max-sm:space-around text-black h-16 max-sm:items-center space-x-14 ' >
         <div className='flex bg-red-200 ' >
          <button onClick={()=>setToggled(true)} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
@@ -24,9 +26,21 @@ const NavBar = (props: Props) => {
         </svg>
     </button>
     </div>
-    <div className='flex justify-start  self-center text-white z-50 '>
+    <div className='flex justify-start  self-center text-white z-50 hover:bg-white '>
             {/* Get sarif fonts*/}
-             <Link href='/' className='text-white font-medium' >The Magisters Corner</Link>
+            <div className='' > 
+               <Link href='/' className='text-whi font-medium' >The Magisters Corner</Link>
+            </div>
+             <div>
+             <Link href='/' className='' > Footwear  </Link>
+             </div>
+             <div>
+             <Link href='/' className='' > Menswear </Link>
+             </div>
+              <div> 
+              <Link href='/' >Sale</Link>
+              </div>
+            
         </div>
         <div className=' flex flex-row justify-end justify-around  self-center  max-sm:flex-col max-sm:items-center '>
               <div className='flex' >
@@ -41,7 +55,7 @@ const NavBar = (props: Props) => {
       </nav>)
     }
   return (
-    <nav className='flex bg-red-200 max-sm:w-full flex-row md:w-full space-around bg-black  max-sm:items-cente z-50 text-white ' >
+    <nav className='flex bg-red-200 max-sm:w-full flex-row md:w-full space-around bg-black  max-sm:items-center z-50 text-black ' >
         {/* mobile*/}
         <div className='flex md:invisible max-sm:flex-col pt-60' >
            {/* mobile drop-down*/}
@@ -51,8 +65,8 @@ const NavBar = (props: Props) => {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
-           <div className=" w-full md:block md:w-auto " id="navbar-default">
-      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+           <div className=" w-full md:block md:w-auto text-black" id="navbar-default">
+      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg text-black bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
           <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
@@ -70,25 +84,25 @@ const NavBar = (props: Props) => {
         </li>
       </ul>
     </div>
-           
+            
         </div>
-        <div className='flex'>
+        <div className='flex z-50 text-black '>
             {/* Get sarif fonts*/}
-             <Link href='/' className='text-white font-medium' >The Magisters Corner</Link>
+             <Link href='/' className=' font-medium text-black ' >The Magisters Corner</Link>
         </div>
-        <div className=' flex flex-row max-sm:flex-col max-sm:items-center '>
+        <div className=' flex flex-row  max-sm:flex-col max-sm:items-center text-black '>
               <div className='flex' >
                 {/* Settings icon for mobile*/}
-                <Link href='/settings' className='text-white' >settings icon</Link>
+                <Link href='/settings' className='' >settings icon</Link>
               </div>
               <div className='flex max-sm:invisible  ' >
-                   <button className='text-white'  >search</button>
-                   <Link href='/settings' className='text-white' >settings</Link>
+                   <button className='text-black'  >search</button>
+                   <Link href='/settings' className='' >settings</Link>
               </div>
         </div>
         {toggleFootWear && <div className='' >
           </div>}
-        {toggleMenswear && <div className='' >
+        {toggleMenswear && <div className=' text-black ' >
           <div className='' >
            <Link className='' href="/menswear" >
            <Image  className='' src='' alt='Menswear Default Pic ' />
