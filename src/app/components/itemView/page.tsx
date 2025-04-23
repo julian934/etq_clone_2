@@ -7,9 +7,11 @@ import Image from 'next/image'
 import { getItemPrice } from '@/app/lib/database/connections'
 //import { getItem } from '@/app/lib/database/connections'
 
-type Props = {}
+type Props = {
+  id:string | undefined | null | any
+}
 
-const ItemView = ({id}:{id:any}) => {
+const ItemView = ({id}:{id:string | undefined | null | any}) => {
   const [priceData,setPriceData]=useState<any>()
     const {data}=useQuery({
         queryKey:['Current Item'],
